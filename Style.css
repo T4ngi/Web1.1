@@ -1,0 +1,203 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+    color: white;  
+    padding-top: 60px;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-bottom: 1px solid white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+nav ul li {
+    height: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    transition: color 0.35s;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+}
+
+nav ul li a:hover {
+    color: #1daf;
+    background-color: #222;
+}
+
+nav ul li img {
+    height: 40px;
+}
+
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main h1 {
+    margin: 55px;
+    text-align: center;
+    font-size: 30px; 
+}
+
+
+.Pencarian {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    transition: width 0.4s ease;
+    margin: 20px auto;
+}
+
+.Pencarian:hover {
+    width: 400px;
+}
+
+.Pencarian input {
+    width: 0;
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: white;
+    color: black; 
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.Pencarian:hover input {
+    width: 100%;
+}
+
+.Pencarian button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.Pencarian button img {
+    width: 24px;
+    height: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1200px; 
+    padding: 0 20px;
+}
+
+.Item_Container {
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.Item_Container:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Item_Container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: opacity 0.3s ease; 
+}
+
+.Item_Container img:hover {
+    opacity: 0.9; 
+}
+
+.Item_Container h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+.Item_Container p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .Item_Container {
+        width: 100%; 
+    }
+}
+
+#bottom {
+    background-color: #111;
+    color: #e0e0e0;
+    padding: 40px;
+    text-align: center;
+    border-top: 2px solid #1daf;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#bottom h1 {
+    font-size: 24px;
+    color: #1daf;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+#bottom p {
+    font-size: 16px;
+    color: #BBBB;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#bottom p:hover {
+    color: #ffffff;
+}
